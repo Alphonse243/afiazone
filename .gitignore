@@ -1,0 +1,85 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+vendor/
+node_modules/
+composer.lock
+
+# Build outputs
+/build/
+/dist/
+/.cache/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.buildpath
+.settings/
+*.iml
+
+# PHP
+.php-cs-fixer.cache
+.phpunit.result.cache
+.coverage/
+coverage/
+*.log
+
+# Uploads & Temporary files
+uploads/
+temp/
+tmp/
+/public/uploads/
+/public/files/
+
+# Storage
+/storage/
+/bootstrap/cache/
+.laravel.tinker.php
+
+# Testing
+.phpunit.xml
+phpunit.xml
+phpunit.xml.dist
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Backups
+*.bak
+*.backup
+*~
+
+# Misc
+.git/hooks/prepare-commit-msg
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Redis
+dump.rdb
+
+# Mail (Mailhog)
+mailhog/
+
+# Yarn
+yarn-error.log
+
+# Package manager
+package-lock.json

@@ -1,0 +1,87 @@
+{
+    "name": "afiazone/marketplace",
+    "description": "AfiaZone - Medical Marketplace with Health E-Wallet",
+    "license": "proprietary",
+    "type": "project",
+    "keywords": [
+        "medical",
+        "marketplace",
+        "e-wallet",
+        "pharmacy",
+        "health"
+    ],
+    "authors": [
+        {
+            "name": "AfiaZone Team",
+            "email": "team@afiazone.local"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-bcmath": "*",
+        "ext-openssl": "*",
+        "ext-mbstring": "*",
+        "ext-redis": "*",
+        "guzzlehttp/guzzle": "^7.7",
+        "firebase/php-jwt": "^6.8",
+        "vlucas/phpdotenv": "^5.5",
+        "monolog/monolog": "^3.4",
+        "symfony/mailer": "^6.3",
+        "symfony/mime": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "friendsofphp/php-cs-fixer": "^3.19",
+        "phpstan/phpstan": "^1.10",
+        "vimeo/psalm": "^5.19",
+        "squizlabs/php_codesniffer": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Config\\": "config/",
+            "Database\\": "database/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "@clear-cache"
+        ],
+        "clear-cache": [
+            "rm -rf storage/cache/*"
+        ],
+        "serve": "php -S localhost:8000 -t public/",
+        "php-cs-fixer": "php-cs-fixer fix --config=.php-cs-fixer.php",
+        "php-cs-fixer-check": "php-cs-fixer fix --config=.php-cs-fixer.php --dry-run",
+        "phpstan": "phpstan analyse --configuration=phpstan.neon",
+        "psalm": "psalm",
+        "phpunit": "phpunit --testdox",
+        "test": [
+            "@phpunit",
+            "@phpstan",
+            "@psalm"
+        ],
+        "lint": "@php-cs-fixer-check",
+        "format": "@php-cs-fixer"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.0"
+        },
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

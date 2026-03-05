@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<psalm
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="https://getpsalm.org"
+  xsi:schemaLocation="https://getpsalm.org vendor/vimeo/psalm/config.xsd"
+  stopOnFirstError="false"
+  useDocblockTypes="true"
+  findUnusedCode="true"
+  findUnusedBaselineEntry="true"
+  findUnusedSuppress="true"
+  cacheDirectory="storage/cache/psalm"
+  errorLevel="5"
+>
+  <projectFiles>
+    <directory name="app" />
+    <directory name="config" />
+    <directory name="routes" />
+    <directory name="tests" />
+    <ignoreFiles>
+      <directory name="vendor" />
+      <directory name="node_modules" />
+      <directory name="storage" />
+    </ignoreFiles>
+  </projectFiles>
+
+  <issueHandlers>
+    <MissingReturnType>
+      <errorLevel type="suppress" />
+    </MissingReturnType>
+    <MissingParamType>
+      <errorLevel type="suppress" />
+    </MissingParamType>
+    <PropertyNotSetInConstructor>
+      <errorLevel type="suppress" />
+    </PropertyNotSetInConstructor>
+  </issueHandlers>
+
+  <plugins>
+    <pluginClass class="Psalm\PhpUnitPlugin\Plugin" />
+  </plugins>
+</psalm>
