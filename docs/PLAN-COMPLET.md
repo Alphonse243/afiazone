@@ -74,11 +74,11 @@
 
 - [ ] **Backend** : PHP 8.1+, pas de framework (MVC custom)
 - [ ] **Base de données** : MySQL 8.0+
-- [ ] **Cache & Queue** : Redis
-- [ ] **Stockage fichiers** : S3 compatible (ou Minio local)
+- [ ] **Cache & Queue** : Redis (optionnel)
+- [ ] **Stockage fichiers** : S3 compatible (ou dossier local `uploads/`)
 - [ ] **CI/CD** : GitHub Actions ou GitLab CI
-- [ ] **Conteneurisation** : Docker & Docker Compose
-- [ ] **Monitoring** : ELK Stack (optionnel), Sentry
+- [ ] **Hébergement** : VPS ou Shared Hosting avec PHP 8.1+
+- [ ] **Monitoring** : Logs fichier, Sentry (optionnel)
 
 ### A.2.2 – Mettre en place le repository Git
 
@@ -89,8 +89,10 @@
 
 ### A.2.3 – Préparation de l'environnement de développement
 
-- [ ] Docker Compose pour dev (PHP, MySQL, Redis, Mailhog)
+- [ ] Setup local : Laragon ou XAMPP (PHP 8.1+, MySQL, Redis)
 - [ ] Installation Composer & dépendances initiales
+- [ ] Configuration virtualhost (http://afiazone.local)
+- [ ] Exécution script `bin/setup-db.php` pour initialiser la BDD
 - [ ] PHP coding standards (PSR-12)
 - [ ] Linter & formatter (PHP CS Fixer)
 
@@ -105,7 +107,10 @@
 ### B.1.1 – Définir la structure MVC
 
 ```
+index.php                    # POINT D'ENTRÉE PRINCIPAL (router)
+
 /app
+  helpers.php                # Fonctions d'aide globales
   /Controllers
     /ProductController.php
     /OrderController.php
@@ -122,44 +127,59 @@
     /PaymentService.php
     /KycService.php
     ... etc
-  /Repositories (optionnel)
+  /Repositories             # Optionnel
   /Middleware
   /Validators
   /Exceptions
-  /Helpers
-  /Console (CLI commands)
+  /Console                   # CLI commands
 
 /routes
-  api.php (routes API)
-  web.php (routes web)
+  api.php                   # Routes API (v1, v2, ...)
+  web.php                   # Routes web (optionnel)
 
 /config
   database.php
   app.php
   services.php
 
-/public (assets, index.php)
-/resources
-  /views
-  /css, /js
-/index.php (Point d'entrer du site)
+/html                       # TEMPLATES & PAGES
+  /back                     # Admin dashboards, gestion
+  /front                    # Pages clients
+  /...pages HTML
+
+/assets                     # ASSETS PUBLIC
+  /css                      # Feuilles de style
+  /js                       # Scripts JavaScript
+  /img                      # Images (avatars, backgrounds, produits)
+  /json                     # Données JSON
+  /audio, /svg              # Médias additionnels
+
+/js                         # Scripts globaux du site
+  bootstrap.js
+  menu.js
+  ... etc
+
+/fonts                      # Polices & icônes custom
 ```
 
 ### B.1.2 – Design Pattern MVC
 
-- [ ] Pattern Repository pour accès données
-- [ ] Service Layer pour logique métier
+- [ ] Pattern Repository pour accès données (optionnel)
+- [ ] Service Layer pour logique métier centralisée
 - [ ] DTO (Data Transfer Objects) pour communication API
-- [ ] Exception custom pour gestion erreurs
+- [ ] Exception custom organisées par domaine
+- [ ] Models avec accès données intégré (ActiveRecord-like)
+- [ ] Controllers légers déléguant métier aux Services
 
 ### B.1.3 – Middleware & Security
 
-- [ ] CORS middleware
-- [ ] Authentication middleware (JWT ou Session)
+- [ ] CORS middleware (si API)
+- [ ] Authentication middleware (JWT ou Session PHP native)
 - [ ] RBAC (Role-Based Access Control) middleware
-- [ ] Rate limiting middleware
-- [ ] CSRF protection
-- [ ] Logging middleware
+- [ ] Rate limiting middleware (optionnel)
+- [ ] CSRF token validation
+- [ ] Logging middleware (audit trail)
+- [ ] Exception handler centralisé
 
 ## B.2 Schéma de base de données complet
 
@@ -1234,69 +1254,74 @@ CREATE INDEX idx_shipment_status_date ON shipments(status, created_at DESC);
 
 **Durée estimée** : 2–3 jours
 
-## C.1 Mise en place Docker
+## C.1 Setup de l'environnement de développement
 
-### C.1.1 – Créer Dockerfile et docker-compose.yml
+### C.1.1 – Installation Laragon (ou XAMPP)
 
-- [ ] Image PHP 8.1+ avec extensions MySQL, Redis, etc.
-- [ ] Conteneur MySQL 8
-- [ ] Conteneur Redis
-- [ ] Conteneur Nginx (reverse proxy)
-- [ ] Conteneur Mailhog (testing emails)
-- [ ] Volume pour logs, uploads
+- [ ] Télécharger et installer Laragon (PHP 8.1+, MySQL, Redis)
+- [ ] Configuration virtualhost `afiazone.local`
+- [ ] Configurer PHP : `upload_max_filesize`, `memory_limit`, `display_errors = on`
+- [ ] Extensions activées : PDO, Redis, cURL, OpenSSL, JSON, GD, Mbstring
+- [ ] Test : `php -v` et accès à http://afiazone.local
 
-### C.1.2 – Configuration Nginx
+### C.1.2 – Configuration du serveur local
 
-- [ ] VirtualHost pour plateforme
-- [ ] Compression gzip
-- [ ] Caching headers appropriés
-- [ ] Limit rate pour API
+- [ ] Mise en place du `.env` (copier de `.env.example`)
+- [ ] Configuration database : host, user, password, database
+- [ ] Configuration Redis (si utilisé)
+- [ ] Configuration upload_dir : `uploads/`
 
-### C.1.3 – Configuration PHP
+### C.1.3 – Initialisation de la base de données
 
-- [ ] php.ini optimisé (upload_max_filesize, memory_limit)
-- [ ] Extensions : PDO, Redis, cURL, OpenSSL, JSON, GD
-- [ ] FPM pool configuration
+- [ ] Créer base de données MySQL `afiazone`
+- [ ] Exécuter `php bin/setup-db.php` pour importer schema.sql
+- [ ] Vérifier tables et indexes créés
+- [ ] Seeding données initiales (rôles, catégories)
 
-## C.2 Scaffolding PHP
+## C.2 Scaffolding MVC & Bootstrap
 
-### C.2.1 – Structure de répertoires
+### C.2.1 – Structure de répertoires (vérification)
 
-- [ ] Créer dossiers (app/, config/, routes/, public/, resources/, tests/, logs/, uploads/)
-- [ ] Créer index.php principal (entry point)
-- [ ] Créer fichier .env template
+- [ ] Vérifier structure : `app/`, `config/`, `routes/`, `html/`, `assets/`, `database/`, `logs/`, `uploads/`
+- [ ] Vérifier `index.php` à la racine
+- [ ] Créer fichier `.env` template avec variables essentielles
 
 ### C.2.2 – Classe Router
 
 - [ ] Implémenter Router simple (RESTful)
 - [ ] Gestion des paramètres GET, POST, URI
-- [ ] Middleware support
+- [ ] Middleware support et pipeline
+- [ ] Dispatching vers Controllers
 
 ### C.2.3 – Classe Database
 
 - [ ] Wrapper PDO pour connexion MySQL
-- [ ] Connexion redis
-- [ ] Pool de connexions (si nécessaire)
+- [ ] Connexion Redis (optionnel)
+- [ ] Methods CRUD basiques (select, insert, update, delete)
+- [ ] Query builder simple (si souhaité)
 
-### C.2.4 – Classe Model
+### C.2.4 – Classe Model (BaseModel)
 
 - [ ] BaseModel pour ORM-like functionality
 - [ ] Gestion des attributes
-- [ ] Méthodes CRUD basiques
-- [ ] Relations (belongs_to, has_many)
+- [ ] Méthodes CRUD : find(), all(), create(), update(), delete()
+- [ ] Relations basiques : belongsTo(), hasMany()
+- [ ] Timestamps : created_at, updated_at auto
 
-### C.2.5 – Classe Controller
+### C.2.5 – Classe Controller (BaseController)
 
 - [ ] BaseController
-- [ ] Helpers pour JSON responses
+- [ ] Helper pour JSON responses
 - [ ] Gestion des statuts HTTP
+- [ ] Error handling & exceptions
 
-### C.2.6 – Fichier bootstrap
+### C.2.6 – Fichier bootstrap (index.php)
 
 - [ ] Charger l'autoloader Composer
-- [ ] Initialiser configuration
+- [ ] Initialiser configuration (.env)
+- [ ] Initialiser DB & connections
 - [ ] Initialiser logs / error handlers
-- [ ] Dispatcher de routes
+- [ ] Instancier Router et dispatcher requête
 
 ## C.3 Composer & Dépendances
 
@@ -1304,10 +1329,8 @@ CREATE INDEX idx_shipment_status_date ON shipments(status, created_at DESC);
 
 - [ ] `monolog/monolog` – logging
 - [ ] `phpunit/phpunit` – tests
-- [ ] `predis/predis` – Redis client
-- [ ] `firebase/php-jwt` – JWT (si choix JWT)
-- [ ] `respect/validation` – validation
-- [ ] `phpmailer/phpmailer` – sending emails
+- [ ] `predis/predis` – Redis client (optionnel)
+- [ ] `firebase/php-jwt` – JWT (optionnel)
 - [ ] `aws/aws-sdk-php` – S3 uploads
 - [ ] `guzzlehttp/guzzle` – HTTP client (Mobile Money APIs)
 
@@ -2342,31 +2365,31 @@ STRIPE_API_KEY=xxx (si applicable)
 
 ### Q.1.1 – Préparation serveur
 
-- [ ] VPS/Cloud (AWS, DigitalOcean, Scaleway, etc.)
+- [ ] VPS (DigitalOcean, Scaleway, IONOS, etc.) ou Shared Hosting PHP 8.1+
 - [ ] OS : Ubuntu 20.04 LTS ou plus récent
-- [ ] Docker + Docker Compose (ou k8s optionnel)
-- [ ] Reverse proxy Nginx
-- [ ] SSL certificate (Let's Encrypt)
+- [ ] Web server : Nginx avec PHP-FPM
+- [ ] SSL certificate (Let's Encrypt avec certbot)
+- [ ] Fail2ban pour sécurité (DDoS, brute force)
 
 ### Q.1.2 – Database setup
 
-- [ ] MySQL managed database (AWS RDS, DigitalOcean DB, etc.)
-- [ ] Daily automated backups (binlog + snapshots)
-- [ ] WAL replication (optionnel HA)
-- [ ] Initial schema + seed data
+- [ ] MySQL managed database (VPS MySQL ou managed service)
+- [ ] Daily automated backups (mysqldump + scripts)
+- [ ] Configuration replication (master-slave optionnel pour HA)
+- [ ] Initial schema + seed data imported
 
 ### Q.1.3 – Storage
 
-- [ ] S3 bucket (ou equivalent MinIO)
+- [ ] S3 bucket (AWS S3 ou Minio local)
 - [ ] CDN (CloudFront, Cloudflare)
-- [ ] CORS configuration
+- [ ] CORS configuration et vie des token d'accès
 
 ### Q.1.4 – Monitoring setup
 
-- [ ] Sentry for error tracking
-- [ ] Prometheus + Grafana (optionnel)
-- [ ] ELK Stack pour logs (optionnel)
-- [ ] Uptime monitoring
+- [ ] Logs fichier : `/var/log/afiazone/` avec rotation
+- [ ] Sentry for error tracking (optionnel)
+- [ ] Uptime monitoring (UptimeRobot, etc.)
+- [ ] Alerts email sur erreurs critiques
 
 ## Q.2 CI/CD Pipeline
 
@@ -2374,9 +2397,9 @@ STRIPE_API_KEY=xxx (si applicable)
 
 - [ ] On push to main :
   - Run tests (PHPUnit, integration)
-  - Code scanning (SonarQube)
-  - Build Docker image
-  - Push to registry
+  - Linting PHP (PHP CS Fixer, Psalm)
+  - Code quality scan (optionnel)
+  - Deploy artifact (git clone ou artifact)
 
 ### Q.2.2 – Staging deployment
 
@@ -2512,7 +2535,7 @@ STRIPE_API_KEY=xxx (si applicable)
 | ----- | ---------------------------------------------------------- |
 | A     | Documenter complet, stakeholders alignment                 |
 | B     | Schema DB validé, no circular relations                    |
-| C     | Docker compose running locally, local dev setup functional |
+| C     | Local dev setup done (Laragon), MySQL ready, bootstrap OK  |
 | D     | JWT/Session auth working, RBAC enforced                    |
 | E     | KYC workflow end-to-end (submit, review, approve)          |
 | F     | Catalog accessible, search working, 1000+ products indexed |
