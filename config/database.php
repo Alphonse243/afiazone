@@ -20,7 +20,7 @@ return [
             'driver' => 'mysql',
             'host' => env('DB_HOST', 'localhost'),
             'port' => (int) env('DB_PORT', 3306),
-            'database' => env('DB_NAME', 'afiazone_db'),
+            'database' => env('DB_NAME', 'afiazone'),
             'username' => env('DB_USER', 'root'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8mb4',

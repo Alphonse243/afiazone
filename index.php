@@ -33,6 +33,8 @@ require_once BASE_PATH . '/app/helpers.php';
 $config = [
     'app' => require BASE_PATH . '/config/app.php',
     'database' => require BASE_PATH . '/config/database.php',
+    'services' => require BASE_PATH . '/config/services.php',
+    'cache' => require BASE_PATH . '/config/cache.php',
 ];
 
 // Set error handling based on debug mode
@@ -126,10 +128,22 @@ if (!method_exists($controller, $methodName)) {
     abort(500, 'Method not found: ' . $methodName);
 }
 
+// Set user context if authenticated (from middleware)
+// TODO: Update controller with authenticated user from session/token
+
 // Execute
 try {
-    call_user_func_array([$controller, $methodName], []);
+    call_user_func_array([$controller, $methodName], array_values($_GET));
+} catch (App\Exceptions\HttpException $e) {
+    logger('HTTP Exception: ' . $e->getMessage());
+    abort($e->getStatusCode(), $e->getMessage());
+} catch (App\Exceptions\ValidationException $e) {
+    response([
+        'success' => false,
+        'message' => $e->getMessage(),
+        'errors' => $e->getErrors(),
+    ], 422);
 } catch (Exception $e) {
     logger('Exception: ' . $e->getMessage(), ['trace' => $e->getTraceAsString()]);
-    abort(500, 'Internal Server Error', ['error' => $e->getMessage()]);
+    abort(500, 'Internal Server Error', ['error' => config('app.debug') ? $e->getMessage() : '']);
 }

@@ -93,16 +93,16 @@
                     <div class="col-lg-12">
                         <div class="logo-search-category-wrapper">
                             <a href="<?php echo $appUrl; ?>index" class="logo-area">
-                                <img src="<?php echo $appUrl; ?>/assets/images/logo/logo-01.svg" alt="logo-main" class="logo">
+                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/logo/logo-01.svg" alt="logo-main" class="logo">
                             </a>
                             <div class="category-search-wrapper">
                                 <div class="category-btn category-hover-header">
-                                    <img class="parent" src="assets/images/icons/bar-1.svg" alt="icons">
+                                    <img class="parent" src="<?php echo $appUrl; ?>/html/front/assets/images/icons/bar-1.svg" alt="icons">
                                     <span>Categories</span>
                                     <ul class="category-sub-menu" id="category-active-four">
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/01.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/01.svg" alt="icons">
                                                 <span>Breakfast &amp; Dairy</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
@@ -114,7 +114,7 @@
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/02.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/02.svg" alt="icons">
                                                 <span>Meats &amp; Seafood</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
@@ -126,13 +126,13 @@
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/03.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/03.svg" alt="icons">
                                                 <span>Breads &amp; Bakery</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/04.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/04.svg" alt="icons">
                                                 <span>Chips &amp; Snacks</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
@@ -144,19 +144,19 @@
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/05.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/05.svg" alt="icons">
                                                 <span>Medical Healthcare</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/06.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/06.svg" alt="icons">
                                                 <span>Breads &amp; Bakery</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/07.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/07.svg" alt="icons">
                                                 <span>Biscuits &amp; Snacks</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
@@ -168,19 +168,19 @@
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/08.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/08.svg" alt="icons">
                                                 <span>Frozen Foods</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/09.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/09.svg" alt="icons">
                                                 <span>Grocery &amp; Staples</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/10.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/10.svg" alt="icons">
                                                 <span>Other Items</span>
                                             </a>
                                         </li>
@@ -238,7 +238,7 @@
                                         <div class="cart-item-1 border-top">
                                             <div class="img-name">
                                                 <div class="thumbanil">
-                                                    <img src="<?php echo $appUrl; ?>/assets/images/shop/cart-1.png" alt="">
+                                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/shop/cart-1.png" alt="">
                                                 </div>
                                                 <div class="details">
                                                     <a href="<?php echo $appUrl; ?>shop-details">
@@ -257,7 +257,7 @@
                                         <div class="cart-item-1">
                                             <div class="img-name">
                                                 <div class="thumbanil">
-                                                    <img src="<?php echo $appUrl; ?>/assets/images/shop/05.png" alt="">
+                                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/shop/05.png" alt="">
                                                 </div>
                                                 <div class="details">
                                                     <a href="<?php echo $appUrl; ?>shop-details">
@@ -276,7 +276,7 @@
                                         <div class="cart-item-1">
                                             <div class="img-name">
                                                 <div class="thumbanil">
-                                                    <img src="<?php echo $appUrl; ?>/assets/images/shop/04.png" alt="">
+                                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/shop/04.png" alt="">
                                                 </div>
                                                 <div class="details">
                                                     <a href="<?php echo $appUrl; ?>shop-details">
@@ -392,7 +392,7 @@
                                                         </div>
                                                         <div class="col-lg-4">
                                                             <a href="<?php echo $appUrl; ?>shop-grid-sidebar" class="feature-add-megamenu-area">
-                                                                <img src="<?php echo $appUrl; ?>/assets/images/feature/05.jpg" alt="feature_product">
+                                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/feature/05.jpg" alt="feature_product">
                                                             </a>
                                                         </div>
                                                     </div>
@@ -450,74 +450,74 @@
                     <div class="col-lg-12">
                         <div class="logo-search-category-wrapper after-md-device-header">
                             <a href="<?php echo $appUrl; ?>index" class="logo-area">
-                                <img src="<?php echo $appUrl; ?>/assets/images/logo/logo-01.svg" alt="logo-main" class="logo">
+                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/logo/logo-01.svg" alt="logo-main" class="logo">
                             </a>
                             <div class="category-search-wrapper">
                                 <div class="category-btn category-hover-header">
-                                    <img class="parent" src="assets/images/icons/bar-1.svg" alt="icons">
+                                    <img class="parent" src="<?php echo $appUrl; ?>/html/front/assets/images/icons/bar-1.svg" alt="icons">
                                     <span>Categories</span>
                                     <ul class="category-sub-menu">
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/01.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/01.svg" alt="icons">
                                                 <span>Breakfast & Dairy</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/02.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/02.svg" alt="icons">
                                                 <span>Meats & Seafood</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/03.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/03.svg" alt="icons">
                                                 <span>Breads & Bakery</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/04.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/04.svg" alt="icons">
                                                 <span>Chips & Snacks</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/05.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/05.svg" alt="icons">
                                                 <span>Medical Healthcare</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/06.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/06.svg" alt="icons">
                                                 <span>Breads & Bakery</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/07.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/07.svg" alt="icons">
                                                 <span>Biscuits & Snacks</span>
                                                 <i class="fa-regular fa-plus"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/08.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/08.svg" alt="icons">
                                                 <span>Frozen Foods</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/09.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/09.svg" alt="icons">
                                                 <span>Grocery & Staples</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                                <img src="<?php echo $appUrl; ?>/assets/images/icons/10.svg" alt="icons">
+                                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/10.svg" alt="icons">
                                                 <span>Other Items</span>
                                             </a>
                                         </li>
@@ -556,7 +556,7 @@
                                             <div class="cart-item-1 border-top">
                                                 <div class="img-name">
                                                     <div class="thumbanil">
-                                                        <img src="<?php echo $appUrl; ?>/assets/images/shop/cart-1.png" alt="">
+                                                        <img src="<?php echo $appUrl; ?>/html/front/assets/images/shop/cart-1.png" alt="">
                                                     </div>
                                                     <div class="details">
                                                         <a href="<?php echo $appUrl; ?>shop-details">
@@ -575,7 +575,7 @@
                                             <div class="cart-item-1">
                                                 <div class="img-name">
                                                     <div class="thumbanil">
-                                                        <img src="<?php echo $appUrl; ?>/assets/images/shop/05.png" alt="">
+                                                        <img src="<?php echo $appUrl; ?>/html/front/assets/images/shop/05.png" alt="">
                                                     </div>
                                                     <div class="details">
                                                         <a href="<?php echo $appUrl; ?>shop-details">
@@ -594,7 +594,7 @@
                                             <div class="cart-item-1">
                                                 <div class="img-name">
                                                     <div class="thumbanil">
-                                                        <img src="<?php echo $appUrl; ?>/assets/images/shop/04.png" alt="">
+                                                        <img src="<?php echo $appUrl; ?>/html/front/assets/images/shop/04.png" alt="">
                                                     </div>
                                                     <div class="details">
                                                         <a href="<?php echo $appUrl; ?>shop-details">
@@ -775,7 +775,7 @@
                         <ul class="category-sub-menu" id="category-active-menu">
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/01.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/01.svg" alt="icons">
                                     <span>Breakfast &amp; Dairy</span>
                                     <i class="fa-regular fa-plus"></i>
                                 </a>
@@ -787,7 +787,7 @@
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/02.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/02.svg" alt="icons">
                                     <span>Meats &amp; Seafood</span>
                                     <i class="fa-regular fa-plus"></i>
                                 </a>
@@ -799,13 +799,13 @@
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/03.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/03.svg" alt="icons">
                                     <span>Breads &amp; Bakery</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/04.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/04.svg" alt="icons">
                                     <span>Chips &amp; Snacks</span>
                                     <i class="fa-regular fa-plus"></i>
                                 </a>
@@ -817,19 +817,19 @@
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/05.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/05.svg" alt="icons">
                                     <span>Medical Healthcare</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/06.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/06.svg" alt="icons">
                                     <span>Breads &amp; Bakery</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/07.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/07.svg" alt="icons">
                                     <span>Biscuits &amp; Snacks</span>
                                     <i class="fa-regular fa-plus"></i>
                                 </a>
@@ -841,19 +841,19 @@
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/08.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/08.svg" alt="icons">
                                     <span>Frozen Foods</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/09.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/09.svg" alt="icons">
                                     <span>Grocery &amp; Staples</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="<?php echo $appUrl; ?>#" class="menu-item">
-                                    <img src="<?php echo $appUrl; ?>/assets/images/icons/10.svg" alt="icons">
+                                    <img src="<?php echo $appUrl; ?>/html/front/assets/images/icons/10.svg" alt="icons">
                                     <span>Other Items</span>
                                 </a>
                             </li>

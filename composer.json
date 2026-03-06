@@ -23,7 +23,6 @@
         "ext-bcmath": "*",
         "ext-openssl": "*",
         "ext-mbstring": "*",
-        "ext-redis": "*",
         "guzzlehttp/guzzle": "^7.7",
         "firebase/php-jwt": "^6.8",
         "vlucas/phpdotenv": "^5.5",

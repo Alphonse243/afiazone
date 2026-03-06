@@ -19,7 +19,7 @@ Ce document décrit un plan de développement complet, étape par étape, pour i
 * Base de données : MySQL 8+
 * Gestionnaire dépendances : Composer
 * Ce plan ne doit utiliser aucun framework mais reste applicable à un MVC personnalisé.
-* Environnement local : Docker (compose) pour PHP+MySQL+Redis
+* Environnement local : Docker (compose) pour PHP+MySQL ou Laragon pour Windows
 * Outils CI/CD : GitHub Actions / GitLab CI
 * Stockage d'objets : S3 (ou compatible) pour fichiers (ordonnances, images produits)
 * Versionnage : Git
@@ -206,10 +206,10 @@ CREATE TABLE wallet_transactions (
 * **Routes** : RESTful routes pour resources (e.g. `GET /products`, `POST /orders`).
 * **Controllers** : un controller par ressource (ProductController, OrderController, WalletController, KycController, AdminController).
 * **Models** : ActiveRecord / Eloquent‑like, chaque table a son modèle.
-* **Views** : Blade/Twig ou moteur simple ; séparer UI vendeur / client / admin.
+* **API JSON** : Réponses JSON structurées ; aucun moteur de template (API REST pure)
 * **Services** : pour logique métier lourde (WalletService, PaymentGatewayService, KycService).
 * **Repositories** (optionnel) : couche d'accès DB pour faciliter tests.
-* **Jobs / Queues** : tâches asynchrones (envoi mails, génération factures, reconciliation). Utiliser Redis + queue worker.
+* **Jobs / Queues** : tâches asynchrones (envoi mails, génération factures, reconciliation). Utiliser file-based queue ou job runner.
 
 ---
 

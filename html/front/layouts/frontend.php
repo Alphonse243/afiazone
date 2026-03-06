@@ -12,17 +12,17 @@ $appUrl = rtrim($config['url'], '/');
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Grocery, Store, stores" />
     <title><?php echo isset($pageTitle) ? $pageTitle : 'AfiaZone - Grocery Store'; ?></title>
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $appUrl; ?>/assets/images/fav.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $appUrl; ?>/assets/img/favicon/favicon.ico" />
     
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="<?php echo $appUrl; ?>/assets/css/plugins.css" />
+    <link rel="stylesheet" href="<?php echo $appUrl; ?>/html/front/assets/css/plugins.css" />
     
     <!-- Main Style -->
-    <link rel="stylesheet" href="<?php echo $appUrl; ?>/assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo $appUrl; ?>/html/front/assets/css/style.css" />
     
     <?php if(isset($additionalStyles)): ?>
         <?php foreach($additionalStyles as $style): ?>
-            <link rel="stylesheet" href="<?php echo $appUrl; ?><?php echo $style; ?>" />
+            <link rel="stylesheet" href="<?php echo $appUrl; ?>/html/front<?php echo $style; ?>" />
         <?php endforeach; ?>
     <?php endif; ?>
 </head>
@@ -43,13 +43,10 @@ $appUrl = rtrim($config['url'], '/');
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <!-- Plugins JS -->
-    <script defer src="<?php echo $appUrl; ?>/assets/js/plugins.js"></script>
-    
-    <!-- Helpers JS -->
-    <script defer src="<?php echo $appUrl; ?>/js/helpers.js"></script>
+    <script defer src="<?php echo $appUrl; ?>/html/front/assets/js/plugins.js"></script>
     
     <!-- Main JS -->
-    <script defer src="<?php echo $appUrl; ?>/assets/js/main.js"></script>
+    <script defer src="<?php echo $appUrl; ?>/html/front/assets/js/main.js"></script>
     
     <?php if(isset($additionalScripts)): ?>
         <?php foreach($additionalScripts as $script): ?>

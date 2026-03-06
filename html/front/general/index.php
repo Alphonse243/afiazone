@@ -1,4 +1,4 @@
-﻿<!-- rts banner area start -->
+<!-- rts banner area start -->
       <div class="rts-banner-area-one mb--30">
         <div class="container">
           <div class="row">
@@ -133,7 +133,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/01.png" alt="category" />
+                        <img src="/html/front/assets/images/category/01.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -141,7 +141,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/02.png" alt="category" />
+                        <img src="/html/front/assets/images/category/02.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -149,7 +149,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/03.png" alt="category" />
+                        <img src="/html/front/assets/images/category/03.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -157,7 +157,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/04.png" alt="category" />
+                        <img src="/html/front/assets/images/category/04.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -165,7 +165,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/05.png" alt="category" />
+                        <img src="/html/front/assets/images/category/05.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -173,7 +173,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/06.png" alt="category" />
+                        <img src="/html/front/assets/images/category/06.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -181,7 +181,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/07.png" alt="category" />
+                        <img src="/html/front/assets/images/category/07.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -189,7 +189,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/08.png" alt="category" />
+                        <img src="/html/front/assets/images/category/08.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -197,7 +197,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/09.png" alt="category" />
+                        <img src="/html/front/assets/images/category/09.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -205,7 +205,7 @@
                     <!-- single swiper start -->
                     <div class="swiper-slide">
                       <a href="shop-grid-sidebar.php" class="single-category-one">
-                        <img src="/assets/images/category/10.png" alt="category" />
+                        <img src="/html/front/assets/images/category/10.png" alt="category" />
                         <p>Organic Vegetable</p>
                       </a>
                     </div>
@@ -424,7 +424,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/01.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/01.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -495,7 +495,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/02.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/02.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -565,7 +565,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/03.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/03.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -635,7 +635,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/04.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/04.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -705,7 +705,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/05.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/05.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -775,7 +775,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/06.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/06.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -845,7 +845,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/15.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/15.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -966,7 +966,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/03.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/03.jpg" alt="grocery" />
                         </a>
                         <div class="body-content">
                           <a href="shop-details.php">
@@ -1006,7 +1006,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/04.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/04.jpg" alt="grocery" />
                         </a>
                         <div class="body-content">
                           <a href="shop-details.php">
@@ -1048,7 +1048,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/05.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/05.jpg" alt="grocery" />
                         </a>
                         <div class="body-content">
                           <a href="shop-details.php">
@@ -1088,7 +1088,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/06.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/06.jpg" alt="grocery" />
                         </a>
                         <div class="body-content">
                           <a href="shop-details.php">
@@ -1212,7 +1212,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/15.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/15.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <span
@@ -1280,7 +1280,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/16.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/16.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1348,7 +1348,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/17.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/17.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1416,7 +1416,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/18.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/18.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1484,7 +1484,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/19.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/19.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1552,7 +1552,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/20.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/20.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1620,7 +1620,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/21.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/21.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1688,7 +1688,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/22.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/22.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1756,7 +1756,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/23.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/23.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1824,7 +1824,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/24.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/24.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1892,7 +1892,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/25.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/25.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -1960,7 +1960,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/26.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/26.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2034,7 +2034,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/15.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/15.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2102,7 +2102,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/16.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/16.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2170,7 +2170,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/17.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/17.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2238,7 +2238,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/18.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/18.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2306,7 +2306,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/19.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/19.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2374,7 +2374,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/20.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/20.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2442,7 +2442,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/21.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/21.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2510,7 +2510,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/22.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/22.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2578,7 +2578,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/23.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/23.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2646,7 +2646,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/24.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/24.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2714,7 +2714,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/25.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/25.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2782,7 +2782,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/26.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/26.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2855,7 +2855,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/15.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/15.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2923,7 +2923,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/16.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/16.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -2991,7 +2991,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/17.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/17.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3059,7 +3059,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/18.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/18.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3127,7 +3127,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/19.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/19.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3195,7 +3195,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/20.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/20.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3263,7 +3263,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/21.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/21.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3331,7 +3331,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/22.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/22.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3399,7 +3399,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/23.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/23.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3467,7 +3467,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/24.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/24.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3535,7 +3535,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/25.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/25.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3603,7 +3603,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/26.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/26.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3676,7 +3676,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/15.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/15.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3744,7 +3744,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/16.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/16.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3812,7 +3812,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/17.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/17.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3880,7 +3880,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/18.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/18.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -3948,7 +3948,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/19.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/19.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4016,7 +4016,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/20.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/20.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4084,7 +4084,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/21.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/21.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4152,7 +4152,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/22.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/22.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4220,7 +4220,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/23.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/23.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4288,7 +4288,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/24.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/24.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4356,7 +4356,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/25.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/25.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4424,7 +4424,7 @@
                             </span>
                             <i class="fa-solid fa-bookmark"></i>
                           </div>
-                          <img src="/assets/images/grocery/26.jpg" alt="grocery" />
+                          <img src="/html/front/assets/images/grocery/26.jpg" alt="grocery" />
                         </a>
                         <div class="action-share-option">
                           <div
@@ -4602,7 +4602,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/07.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/07.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4626,7 +4626,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/08.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/08.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4650,7 +4650,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/09.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/09.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4674,7 +4674,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/10.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/10.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4698,7 +4698,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/11.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/11.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4722,7 +4722,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/12.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/12.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4746,7 +4746,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/13.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/13.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4770,7 +4770,7 @@
                         </span>
                         <i class="fa-solid fa-bookmark"></i>
                       </div>
-                      <img src="/assets/images/grocery/14.jpg" alt="grocery" />
+                      <img src="/html/front/assets/images/grocery/14.jpg" alt="grocery" />
                     </a>
                     <div class="body-content">
                       <a href="shop-details.php">
@@ -4810,7 +4810,7 @@
                   <!-- single blog area start -->
                   <div class="single-blog-area-start">
                     <a href="blog-details.php" class="thumbnail">
-                      <img src="/assets/images/blog/01.jpg" alt="blog-area" />
+                      <img src="/html/front/assets/images/blog/01.jpg" alt="blog-area" />
                     </a>
                     <div class="blog-body">
                       <div class="top-area">
@@ -4843,7 +4843,7 @@
                   <!-- single blog area start -->
                   <div class="single-blog-area-start">
                     <a href="blog-details.php" class="thumbnail">
-                      <img src="/assets/images/blog/02.jpg" alt="blog-area" />
+                      <img src="/html/front/assets/images/blog/02.jpg" alt="blog-area" />
                     </a>
                     <div class="blog-body">
                       <div class="top-area">
@@ -4876,7 +4876,7 @@
                   <!-- single blog area start -->
                   <div class="single-blog-area-start">
                     <a href="blog-details.php" class="thumbnail">
-                      <img src="/assets/images/blog/03.jpg" alt="blog-area" />
+                      <img src="/html/front/assets/images/blog/03.jpg" alt="blog-area" />
                     </a>
                     <div class="blog-body">
                       <div class="top-area">
@@ -4909,7 +4909,7 @@
                   <!-- single blog area start -->
                   <div class="single-blog-area-start">
                     <a href="blog-details.php" class="thumbnail">
-                      <img src="/assets/images/blog/04.jpg" alt="blog-area" />
+                      <img src="/html/front/assets/images/blog/04.jpg" alt="blog-area" />
                     </a>
                     <div class="blog-body">
                       <div class="top-area">

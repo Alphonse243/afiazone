@@ -403,3 +403,91 @@ if (! function_exists('array_get')) {
         return $array;
     }
 }
+
+if (! function_exists('db')) {
+    /**
+     * Get database connection
+     */
+    function db(): ?PDO
+    {
+        static $connection = null;
+
+        if ($connection === null) {
+            try {
+                $dbConfig = config('database.connections.' . config('database.default'));
+                
+                $dsn = sprintf(
+                    'mysql:host=%s;port=%d;dbname=%s;charset=%s',
+                    $dbConfig['host'],
+                    $dbConfig['port'],
+                    $dbConfig['database'],
+                    $dbConfig['charset']
+                );
+
+                $connection = new PDO(
+                    $dsn,
+                    $dbConfig['username'],
+                    $dbConfig['password'],
+                    $dbConfig['options'] ?? []
+                );
+            } catch (PDOException $e) {
+                logger('Database connection error', ['error' => $e->getMessage()]);
+                return null;
+            }
+        }
+
+        return $connection;
+    }
+}
+
+if (! function_exists('view_path')) {
+    /**
+     * Get view file path
+     */
+    function view_path(string $view = ''): string
+    {
+        $file = str_replace('.', '/', $view) . '.php';
+        return base_path('html/' . $file);
+    }
+}
+
+if (! function_exists('cache')) {
+    /**
+     * Get/set cache value
+     */
+    function cache(string $key, mixed $value = null, int $ttl = 3600): mixed
+    {
+        // File-based cache implementation
+        static $store = [];
+
+        if ($value === null) {
+            return $store[$key] ?? null;
+        }
+
+        $store[$key] = $value;
+        return $value;
+    }
+}
+
+if (! function_exists('redirect')) {
+    /**
+     * Redirect to URL
+     */
+    function redirect(string $url, int $statusCode = 302): void
+    {
+        http_response_code($statusCode);
+        header('Location: ' . $url);
+        exit;
+    }
+}
+
+if (! function_exists('route')) {
+    /**
+     * Generate URL for route
+     */
+    function route(string $name, array $params = []): string
+    {
+        // TODO: Implement route name resolution
+        return '/';
+    }
+}

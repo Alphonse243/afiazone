@@ -101,7 +101,7 @@
                         </div>
                         <div class="payment-access">
                             <span>Payment Accepts:</span>
-                            <img src="<?php echo $appUrl; ?>/assets/images/payment/01.png" alt="">
+                            <img src="<?php echo $appUrl; ?>/html/front/assets/images/payment/01.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -121,8 +121,8 @@
                         </p>
                         <a href="#" class="playstore-app-area">
                             <span>Download App</span>
-                            <img src="<?php echo $appUrl; ?>/assets/images/payment/02.png" alt="">
-                            <img src="<?php echo $appUrl; ?>/assets/images/payment/03.png" alt="">
+                            <img src="<?php echo $appUrl; ?>/html/front/assets/images/payment/02.png" alt="">
+                            <img src="<?php echo $appUrl; ?>/html/front/assets/images/payment/03.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -183,21 +183,21 @@
                     <div class="product-thumb-area">
                         <div class="cursor"></div>
                         <div class="thumb-wrapper one filterd-items figure">
-                            <div class="product-thumb zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo $appUrl; ?>/assets/images/products/product-details.jpg)"><img src="<?php echo $appUrl; ?>/assets/images/products/product-details.jpg" alt="product-thumb">
+                            <div class="product-thumb zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo $appUrl; ?>/html/front/assets/images/products/product-details.jpg)"><img src="<?php echo $appUrl; ?>/html/front/assets/images/products/product-details.jpg" alt="product-thumb">
                             </div>
                         </div>
                         <div class="thumb-wrapper two filterd-items hide">
-                            <div class="product-thumb zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo $appUrl; ?>/assets/images/products/product-filt2.jpg)"><img src="<?php echo $appUrl; ?>/assets/images/products/product-filt2.jpg" alt="product-thumb">
+                            <div class="product-thumb zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt2.jpg)"><img src="<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt2.jpg" alt="product-thumb">
                             </div>
                         </div>
                         <div class="thumb-wrapper three filterd-items hide">
-                            <div class="product-thumb zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo $appUrl; ?>/assets/images/products/product-filt3.jpg)"><img src="<?php echo $appUrl; ?>/assets/images/products/product-filt3.jpg" alt="product-thumb">
+                            <div class="product-thumb zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt3.jpg)"><img src="<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt3.jpg" alt="product-thumb">
                             </div>
                         </div>
                         <div class="product-thumb-filter-group">
-                            <div class="thumb-filter filter-btn active" data-show=".one"><img src="<?php echo $appUrl; ?>/assets/images/products/product-filt1.jpg" alt="product-thumb-filter"></div>
-                            <div class="thumb-filter filter-btn" data-show=".two"><img src="<?php echo $appUrl; ?>/assets/images/products/product-filt2.jpg" alt="product-thumb-filter"></div>
-                            <div class="thumb-filter filter-btn" data-show=".three"><img src="<?php echo $appUrl; ?>/assets/images/products/product-filt3.jpg" alt="product-thumb-filter"></div>
+                            <div class="thumb-filter filter-btn active" data-show=".one"><img src="<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt1.jpg" alt="product-thumb-filter"></div>
+                            <div class="thumb-filter filter-btn" data-show=".two"><img src="<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt2.jpg" alt="product-thumb-filter"></div>
+                            <div class="thumb-filter filter-btn" data-show=".three"><img src="<?php echo $appUrl; ?>/html/front/assets/images/products/product-filt3.jpg" alt="product-thumb-filter"></div>
                         </div>
                     </div>
                     <div class="contents">
@@ -286,17 +286,17 @@
                         <div class="single-compare-elements name">Preview</div>
                         <div class="single-compare-elements">
                             <div class="thumbnail-preview">
-                                <img src="<?php echo $appUrl; ?>/assets/images/grocery/01.jpg" alt="grocery">
+                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/grocery/01.jpg" alt="grocery">
                             </div>
                         </div>
                         <div class="single-compare-elements">
                             <div class="thumbnail-preview">
-                                <img src="<?php echo $appUrl; ?>/assets/images/grocery/02.jpg" alt="grocery">
+                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/grocery/02.jpg" alt="grocery">
                             </div>
                         </div>
                         <div class="single-compare-elements">
                             <div class="thumbnail-preview">
-                                <img src="<?php echo $appUrl; ?>/assets/images/grocery/03.jpg" alt="grocery">
+                                <img src="<?php echo $appUrl; ?>/html/front/assets/images/grocery/03.jpg" alt="grocery">
                             </div>
                         </div>
                     </div>

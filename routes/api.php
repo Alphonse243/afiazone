@@ -10,6 +10,13 @@ declare(strict_types=1);
  */
 
 return [
+    // Home/Welcome
+    [
+        'method' => 'GET',
+        'path' => '/',
+        'controller' => 'HealthController@welcome',
+    ],
+
     // Health check
     [
         'method' => 'GET',
@@ -153,11 +160,77 @@ return [
         'middleware' => ['auth'],
     ],
 
-    // Admin Routes
+    // Admin Routes - Authentication
+    [
+        'method' => 'GET',
+        'path' => '/admin',
+        'controller' => 'Admin\AuthController@showLogin',
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/login',
+        'controller' => 'Admin\AuthController@showLogin',
+    ],
+    [
+        'method' => 'POST',
+        'path' => '/admin/login',
+        'controller' => 'Admin\AuthController@login',
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/register',
+        'controller' => 'Admin\AuthController@showRegister',
+    ],
+    [
+        'method' => 'POST',
+        'path' => '/admin/register',
+        'controller' => 'Admin\AuthController@register',
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/forgot-password',
+        'controller' => 'Admin\AuthController@showForgotPassword',
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/reset-password',
+        'controller' => 'Admin\AuthController@showResetPassword',
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/2fa',
+        'controller' => 'Admin\AuthController@show2FA',
+    ],
+    [
+        'method' => 'POST',
+        'path' => '/admin/logout',
+        'controller' => 'Admin\AuthController@logout',
+        'middleware' => ['auth'],
+    ],
+
+    // Admin Routes - Dashboard
     [
         'method' => 'GET',
         'path' => '/admin/dashboard',
-        'controller' => 'AdminController@dashboard',
+        'controller' => 'Admin\DashboardController@dashboard',
+        'middleware' => ['auth'],
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/dashboard/analytics',
+        'controller' => 'Admin\DashboardController@adminDashboard',
         'middleware' => ['auth', 'admin'],
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/dashboard/ecommerce',
+        'controller' => 'Admin\DashboardController@merchantDashboard',
+        'middleware' => ['auth'],
+    ],
+    [
+        'method' => 'GET',
+        'path' => '/admin/dashboard/crm',
+        'controller' => 'Admin\DashboardController@partnerDashboard',
+        'middleware' => ['auth'],
     ],
 ];

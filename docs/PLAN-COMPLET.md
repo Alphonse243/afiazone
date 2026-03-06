@@ -5,7 +5,7 @@
 **Version** : 1.0  
 **Date** : Mars 2026  
 **Durée estimée** : 16–20 semaines  
-**Architecture** : PHP 8.1+ (MVC personnalisé) + MySQL 8 + Redis
+**Architecture** : PHP 8.1+ (MVC personnalisé) + MySQL 8 + File-based Caching
 
 ---
 
@@ -74,7 +74,7 @@
 
 - [ ] **Backend** : PHP 8.1+, pas de framework (MVC custom)
 - [ ] **Base de données** : MySQL 8.0+
-- [ ] **Cache & Queue** : Redis (optionnel)
+- [ ] **Cache & Queue** : File-based storage (scalable)
 - [ ] **Stockage fichiers** : S3 compatible (ou dossier local `uploads/`)
 - [ ] **CI/CD** : GitHub Actions ou GitLab CI
 - [ ] **Hébergement** : VPS ou Shared Hosting avec PHP 8.1+
@@ -89,7 +89,7 @@
 
 ### A.2.3 – Préparation de l'environnement de développement
 
-- [ ] Setup local : Laragon ou XAMPP (PHP 8.1+, MySQL, Redis)
+- [ ] Setup local : Laragon ou XAMPP (PHP 8.1+, MySQL)
 - [ ] Installation Composer & dépendances initiales
 - [ ] Configuration virtualhost (http://afiazone.local)
 - [ ] Exécution script `bin/setup-db.php` pour initialiser la BDD
@@ -1258,17 +1258,17 @@ CREATE INDEX idx_shipment_status_date ON shipments(status, created_at DESC);
 
 ### C.1.1 – Installation Laragon (ou XAMPP)
 
-- [ ] Télécharger et installer Laragon (PHP 8.1+, MySQL, Redis)
+- [ ] Télécharger et installer Laragon (PHP 8.1+, MySQL)
 - [ ] Configuration virtualhost `afiazone.local`
 - [ ] Configurer PHP : `upload_max_filesize`, `memory_limit`, `display_errors = on`
-- [ ] Extensions activées : PDO, Redis, cURL, OpenSSL, JSON, GD, Mbstring
+- [ ] Extensions activées : PDO, cURL, OpenSSL, JSON, GD, Mbstring
 - [ ] Test : `php -v` et accès à http://afiazone.local
 
 ### C.1.2 – Configuration du serveur local
 
 - [ ] Mise en place du `.env` (copier de `.env.example`)
 - [ ] Configuration database : host, user, password, database
-- [ ] Configuration Redis (si utilisé)
+- [ ] Configuration cache (file-based par défaut)
 - [ ] Configuration upload_dir : `uploads/`
 
 ### C.1.3 – Initialisation de la base de données
@@ -1296,7 +1296,7 @@ CREATE INDEX idx_shipment_status_date ON shipments(status, created_at DESC);
 ### C.2.3 – Classe Database
 
 - [ ] Wrapper PDO pour connexion MySQL
-- [ ] Connexion Redis (optionnel)
+- [ ] Vérifier dossiers storage/ crées (cache, logs, sessions, uploads)
 - [ ] Methods CRUD basiques (select, insert, update, delete)
 - [ ] Query builder simple (si souhaité)
 
@@ -1329,7 +1329,7 @@ CREATE INDEX idx_shipment_status_date ON shipments(status, created_at DESC);
 
 - [ ] `monolog/monolog` – logging
 - [ ] `phpunit/phpunit` – tests
-- [ ] `predis/predis` – Redis client (optionnel)
+- [ ] Cache drivers configurés (file, memcached)
 - [ ] `firebase/php-jwt` – JWT (optionnel)
 - [ ] `aws/aws-sdk-php` – S3 uploads
 - [ ] `guzzlehttp/guzzle` – HTTP client (Mobile Money APIs)
@@ -1354,9 +1354,6 @@ DB_PORT=3306
 DB_DATABASE=afiazone
 DB_USERNAME=root
 DB_PASSWORD=secret
-
-REDIS_HOST=redis
-REDIS_PORT=6379
 
 JWT_SECRET=your-jwt-secret
 JWT_ALGORITHM=HS256
@@ -1437,7 +1434,7 @@ STRIPE_API_KEY=xxx (si applicable)
 ### D.1.6 – Logout
 
 - [ ] Endpoint POST `/api/auth/logout`
-- [ ] Si JWT : add token blacklist (Redis)
+- [ ] Si JWT : add token blacklist (file-based store)
 - [ ] Si Session : destroy session
 
 ## D.2 RBAC (Role-Based Access Control)
@@ -2044,7 +2041,7 @@ STRIPE_API_KEY=xxx (si applicable)
 
 ### K.3.1 – Automated reconciliation job
 
-- [ ] Daily batch job (Redis queue)
+- [ ] Daily batch job (file-based queue)
 - [ ] Fetch toutes transactions depuis gateway API
 - [ ] Compare avec local records
 - [ ] Flag discrepancies
@@ -2186,7 +2183,7 @@ STRIPE_API_KEY=xxx (si applicable)
 
 ### N.1.3 – Email template system
 
-- [ ] Template engine (Blade, Twig, ou custom)
+- [ ] ✅ API REST JSON (pas de template engine - API pure)
 - [ ] Store templates en DB
 - [ ] Variable substitution ({{name}}, {{order_id}})
 - [ ] A/B testing support (optionnel)
@@ -2468,7 +2465,7 @@ STRIPE_API_KEY=xxx (si applicable)
 ### R.2.1 – Performance tuning
 
 - [ ] Database query optimization (slow query logs)
-- [ ] Caching layer (Redis for sessions, query results)
+- [ ] Caching layer (file-based and memcached for sessions, query results)
 - [ ] Image optimization + thumbnails
 - [ ] API response time targets
 

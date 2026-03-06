@@ -3,7 +3,7 @@
 **Medical Marketplace avec E-Wallet Santé**  
 **Version** : 1.0  
 **Date** : Mars 2026  
-**Stack** : PHP 8.1+ (MVC Custom) | MySQL 8 | Redis
+**Stack** : PHP 8.1+ (MVC Custom) | MySQL 8 | File-based Caching
 
 ---
 
@@ -23,7 +23,22 @@
 
 ## Vue d'ensemble
 
-**AfiaZone** est une plateforme de marketplace médicale avec un système d'e-wallet intégré, conçue pour la région d'Afrique centrale (RDC). Elle permet :
+**AfiaZone** est une plateforme de marketplace médicale avec un système d'e-wallet intégré, conçue pour la région d'Afrique centrale (RDC).
+
+### ⚠️ Important : Architecture sans framework
+
+Ce projet est une **API REST pure en PHP pur** :
+- ✅ **Pas de framework** (Laravel, Symfony, etc.)
+- ✅ **Pas de template engine** (Blade, Twig, etc.)  
+- ✅ **Pas de base de données ORM** (Eloquent, Doctrine, etc.)
+- ✅ **Réponses JSON uniquement** - pas de rendu HTML
+- ✅ **MVC personnalisé** léger et contrôlé
+- ✅ **Router intégré** dans `/index.php`
+- ✅ **Dépendances minimales** via Composer
+
+Les frontend (web, mobile) consomment cette API en tant que clients HTTP.
+
+### Elle permet :
 
 - **Patients** : Acheter des médicaments, consultation médicale, gestion du dossier médical
 - **Marchands** : Vendre des produits pharmaceutiques (grossistes, producteurs, détaillants)
@@ -110,16 +125,16 @@ L'application suit un pattern **MVC modulaire sans framework** avec couches mét
 ├── database.php         # Configuration BDD
 ├── app.php             # Paramètres globaux
 ├── services.php        # Configuration services externes
-└── cache.php           # Configuration Redis/Cache
+└── cache.php           # Configuration Cache/Session/Queue (file-based)
 
-/index.php             # Point d'entrée (router principal)
+/index.php             # Point d'entrée (router API REST)
 
 /html
-├── /back               # Templates backend (dashboards, admin)
-├── /front              # Templates frontend (client-facing)
-└── /...                # Pages HTML
+├── /back               # Templates HTML optionnels (admin panel future)
+├── /front              # Templates HTML optionnels (frontend future)
+└── /...                # Pages HTML statiques (non utilisées par l'API)
 
-/public                # Accès direct (si serveur configuré)
+/public                # Fichiers statiques (CSS, JS, images)
 │
 /assets
 ├── /css                # Feuilles de style
@@ -184,13 +199,13 @@ L'application suit un pattern **MVC modulaire sans framework** avec couches mét
 │  └───────────────────────────────────────────────────┘   │
 └────────────────┬─────────────────────────────────────────┘
                  │
-       ┌─────────┴─────────┐
-       │                   │
-   ┌───▼────┐          ┌───▼──────┐
-   │ MySQL  │          │  Redis   │
-   │  8.0+  │          │Cache/    │
-   │        │          │Queues    │
-   └────────┘          └──────────┘
+       ┌─────────┴──────────────┐
+       │                        │
+   ┌───▼────┐          ┌───▼──────────┐
+   │ MySQL  │          │  File Cache  │
+   │  8.0+  │          │Sessions/     │
+   │        │          │Queues        │
+   └────────┘          └──────────────┘
 ```
 
 ### Composants clés
