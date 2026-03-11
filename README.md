@@ -270,7 +270,7 @@ Proprietary - AfiaZone 2026
 AfiaZone Development Team
 
 ### Alphonse katumba 
-[Alphonse243](https://github.com/Alphonse 243)
+[Alphonse243](https://github.com/Alphonse243)
 <https://github.com/Alphonse243>
 
 
