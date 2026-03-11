@@ -1,15 +1,15 @@
-# 🏥 AfiaZone - Medical Marketplace with Health E-Wallet
+#  AfiaZone - Medical Marketplace with Health E-Wallet
 
 A comprehensive digital healthcare marketplace platform connecting clinics, pharmacies, laboratories, doctors, and patients.
 
-## 📋 Documentation
+## Documentation
 
-- **Project Documentation**: [📖 docs/afiazone.md](docs/afiazone.md)
-- **Development Plan**: [📋 docs/plan.md](docs/plan.md)
-- **Complete Development Plan**: [📋 docs/PLAN-COMPLET.md](docs/PLAN-COMPLET.md)
-- **Laragon Setup Guide**: [🏠 docs/LARAGON-SETUP.md](docs/LARAGON-SETUP.md) ← Start here for local development
+- **Project Documentation**: [ docs/afiazone.md](docs/afiazone.md)
+- **Development Plan**: [ docs/plan.md](docs/plan.md)
+- **Complete Development Plan**: [ docs/PLAN-COMPLET.md](docs/PLAN-COMPLET.md)
+- **Laragon Setup Guide**: [ docs/LARAGON-SETUP.md](docs/LARAGON-SETUP.md) ← Start here for local development
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites - Laragon Setup (Recommended)
 
@@ -80,7 +80,7 @@ A comprehensive digital healthcare marketplace platform connecting clinics, phar
    - Access your app at: **http://afiazone.test**
    - Entry point: `index.php` at the root serves as the application entry point
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 afiazone/
@@ -126,7 +126,7 @@ afiazone/
 └── index.php                     # Entry point
 ```
 
-## 🔧 Available Commands
+##  Available Commands
 
 ### Development
 
@@ -168,7 +168,7 @@ php bin/make-migration.php <name>
 
 
 
-## 🔐 Security
+## Security
 
 - All sensitive data is environment-based (.env file)
 - Database passwords and API keys should never be committed
@@ -178,7 +178,7 @@ php bin/make-migration.php <name>
 - Validate all user inputs server-side
 - Follow OWASP security guidelines
 
-## 📝 Database Credentials (Laragon Development)
+##  Database Credentials (Laragon Development)
 
 ```
 MySQL:
@@ -189,7 +189,7 @@ MySQL:
   Database: afiazone
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -202,15 +202,15 @@ composer test
 ./vendor/bin/phpunit --coverage-html=coverage/
 ```
 
-## 📧 Email Testing
+##  Email Testing
 
 Emails are sent using PHP mail() driver in development environment.
 
-## 📦 File Storage
+##  File Storage
 
 Files are stored locally in the `public/uploads/` directory.
 
-## 🔀 Git Workflow
+## Git Workflow
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
@@ -225,11 +225,11 @@ git commit -m "Descriptive message"
 git push origin feature/your-feature-name
 ```
 
-## 📚 API Documentation
+##  API Documentation
 
 API documentation is available at: `/api/docs`
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Database connection errors
 
@@ -261,11 +261,11 @@ For issues, documentation, or questions:
 - Check existing documentation in `/docs`
 - Review contribution guidelines in `CONTRIBUTING.md`
 
-## 📄 License
+##  License
 
 Proprietary - AfiaZone 2026
 
-## 👥 Team
+##  Team
 
 AfiaZone Development Team
 
